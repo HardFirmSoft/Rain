@@ -13,7 +13,7 @@ public class Frame extends JFrame implements ActionListener {
 	private int DEFAULT_WIDTH = 750;
 	
 	private Panel Panel = new Panel();
-	private Timer timer = new Timer(20, null);
+	private Timer timer = new Timer(30, null);
 	
 	public Frame() {
 		timer.addActionListener(this);
@@ -44,6 +44,7 @@ public class Frame extends JFrame implements ActionListener {
 	
 	public void actionPerformed(ActionEvent e) {
 		repaint();
+		
 	}
 	public static void main(String [] args) {
 		Frame frame = new Frame();
